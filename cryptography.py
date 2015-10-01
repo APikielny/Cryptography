@@ -22,8 +22,12 @@ messagelist=[]
 for x in message:
     messagelist.append(associations.find(x))
 keylist=[]
-for x in key:
-    keylist.append(associations.find(x))
+if len(key)>=message:
+    for x in key:
+        keylist.append(associations.find(x))
+#need to increase key size
+#else:
+    
 sumlist=[]
 for x in range(0,len(message)):
     sumlist.append(keylist[x]+messagelist[x])
