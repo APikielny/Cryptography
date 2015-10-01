@@ -37,6 +37,12 @@ if inp=="e":
     for x in sumlist:
         sys.stdout.write(associations[x%85])
 
+if inp=="d":
+    difflist=[]
+    for x in range(0,len(message)):
+        sumlist.append(keylist[x]-messagelist[x])
+    for x in sumlist:
+        sys.stdout.write(associations[x%85])
     
 if inp=="q":
     print("Goodbye!")
