@@ -40,7 +40,7 @@ if inp=="e":
 if inp=="d":
     difflist=[]
     for x in range(0,len(message)):
-        sumlist.append(keylist[x]-messagelist[x])
+        difflist.append(keylist[x]-messagelist[x])
     for x in sumlist:
         sys.stdout.write(associations[x%85])
     
