@@ -15,6 +15,7 @@ while inp!="e" and inp!="d" and inp!="q":
     print("Did not understand command, try again. \n")
     inp=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 message=input("Message: ")
+key=input("Key: ")
 if inp=="e":
     
 if inp=="q":
