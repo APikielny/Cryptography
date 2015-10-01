@@ -11,9 +11,11 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 import sys
 inp=""
-while inp!="q":
+while True:
     associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
     inp=input("Enter e to encrypt, d to decrypt, or q to quit: ")
+    if inp=="q":
+        break
     while inp!="e" and inp!="d" and inp!="q":
         print("Did not understand command, try again. \n")
         inp=input("Enter e to encrypt, d to decrypt, or q to quit: ")
