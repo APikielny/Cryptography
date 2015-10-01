@@ -16,7 +16,20 @@ while inp!="e" and inp!="d" and inp!="q":
     inp=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 message=input("Message: ")
 key=input("Key: ")
-if inp=="e":
+messagelist=[]
+for x in message:
+    messagelist.append(associations.find(x))
+keylist=[]
+for x in key:
+    keylist.append(associations.find(x))
+sumlist=[]
+for x in range(0,len(message)):
+    sumlist.append(keylist[x]+messagelist[x])
+for x in sumlist:
+    print(associations[x])
+
+
+#if inp=="e":
     
 if inp=="q":
     print("Goodbye!")
