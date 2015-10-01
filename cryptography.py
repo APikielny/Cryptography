@@ -9,7 +9,7 @@ Write and submit a program that encrypts and decrypts user data.
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
-
+import sys
 
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 inp=input("Enter e to encrypt, d to decrypt, or q to quit: ")
@@ -28,7 +28,7 @@ sumlist=[]
 for x in range(0,len(message)):
     sumlist.append(keylist[x]+messagelist[x])
 for x in sumlist:
-    print(associations[x])
+    sys.stdout.write(associations[x])
 
 
 #if inp=="e":
