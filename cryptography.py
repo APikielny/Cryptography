@@ -44,5 +44,4 @@ if inp=="d":
     for x in difflist:
         sys.stdout.write(associations[x%85])
     
-if inp=="q":
-    print("Goodbye!")
+print("Goodbye!")
