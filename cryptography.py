@@ -28,7 +28,7 @@ sumlist=[]
 for x in range(0,len(message)):
     sumlist.append(keylist[x]+messagelist[x])
 for x in sumlist:
-    sys.stdout.write(associations[x])
+    sys.stdout.write(associations[x%85])
 
 
 #if inp=="e":
