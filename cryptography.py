@@ -23,22 +23,20 @@ for x in message:
     messagelist.append(associations.find(x))
 keylist=[]
 j=0
-    while len(key)<len(message):
-        keylist.append(key[j])
-        j+=1
-print(key)
+while len(key)<len(message):
+    key+=(key[j])
+    j+=1
 
 for x in key:
     keylist.append(associations.find(x))
     
-sumlist=[]
-for x in range(0,len(message)):
-    sumlist.append(keylist[x]+messagelist[x])
-for x in sumlist:
-    sys.stdout.write(associations[x%85])
+if inp=="e":
+    sumlist=[]
+    for x in range(0,len(message)):
+        sumlist.append(keylist[x]+messagelist[x])
+    for x in sumlist:
+        sys.stdout.write(associations[x%85])
 
-
-#if inp=="e":
     
 if inp=="q":
     print("Goodbye!")
