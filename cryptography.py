@@ -39,7 +39,7 @@ while True:
             sumlist.append(keylist[x]+messagelist[x])
         for x in sumlist:
             sys.stdout.write(associations[x%85])
-            print("\n")
+    print("\n")
 
     if inp=="d":
         difflist=[]
@@ -47,6 +47,6 @@ while True:
             difflist.append(messagelist[x]-keylist[x])
         for x in difflist:
             sys.stdout.write(associations[x%85])
-            print("\n")
+    print("\n")
     
 print("Goodbye!")
